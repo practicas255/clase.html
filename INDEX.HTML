@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso - Tiendas Metro Perú</title>
+</head>
+
+<body>
+
+    <!-- 1. BLOQUE SUPERIOR (BANNER DE CABECERA) -->
+    <!-- Ajustamos el alto a 150px para que no sea muy alto -->
+    <header>
+        <img src="banner.png" alt="Banner Principal de Tiendas Metro Perú" width="100%" height="150" style="object-fit: cover;">
+    </header>
+
+    <hr>
+
+    <!-- 2. BARRA DE NAVEGACIÓN (CON HIPERVÍNCULO EN REGISTRO) -->
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Nosotros</a> |
+        <a href="#">Puestos Disponibles</a> |
+        <!-- Etiqueta hipervínculo para REGISTRO -->
+        <a href="#formulario-registro">REGISTRO</a>
+    </nav>
+
+    <hr>
+
+    <!-- 3. CONTENIDO PRINCIPAL -->
+    <table border="1" width="100%">
+        <tr>
+            <!-- Columna Izquierda: Menú Lateral -->
+            <td width="20%" valign="top">
+                <ul>
+                    <li>Beneficios</li>
+                    <li>Turnos Jóvenes</li>
+                    <li>Requisitos</li>
+                    <li>Sedes Perú</li>
+                    <li>Preguntas Frecuentes</li>
+                </ul>
+            </td>
+
+            <!-- Columna Central: Imagen Promocional Principal -->
+            <!-- Limitamos el alto a 350px para mantener equilibrio con el formulario -->
+            <td width="55%" valign="top" align="center">
+                <img src="trabajadores.jpeg" alt="Jóvenes trabajando en Tiendas Metro" width="100%" height="350" style="object-fit: cover;">
+            </td>
+
+            <!-- Columna Derecha: Formulario y Cuadro Secundario -->
+            <td width="25%" valign="top">
+
+                <!-- Sección Formulario de Ingreso -->
+                <div id="formulario-registro">
+                    <h2>FORMULARIO</h2>
+                    <form action="#" method="POST">
+                        <p>
+                            <label for="nombre">Nombre Completo:</label><br>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </p>
+                        <p>
+                            <label for="dni">DNI / CE:</label><br>
+                            <input type="text" id="dni" name="dni" maxlength="12" required>
+                        </p>
+                        <p>
+                            <label for="puesto">Puesto de Interés:</label><br>
+                            <select id="puesto" name="puesto">
+                                <option value="cajero">Cajero / Cajera Part-Time</option>
+                                <option value="reposicion">Reposición Nocturna/Día</option>
+                                <option value="atencion">Atención al Cliente</option>
+                                <option value="almacen">Almacén / Logística</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="submit" value="¡POSTULAR AHORA!">
+                        </p>
+                    </form>
+                </div>
+
+                <hr>
+
+                <!-- Espacio para Imagen Pequeña Derecha -->
+                <!-- Limitamos el alto a 100px para el logo -->
+                <div align="center">
+                    <img src="logo.png" alt="Publicidad Secundaria Metro" width="100%" height="100" style="object-fit: contain;">
+                </div>
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 4. SECCIÓN ANCHA HORIZONTAL INFERIOR -->
+    <section>
+        <h3>¡Súmate al equipo juvenil de Tiendas Metro Perú!</h3>
+        <p>Ofrecemos horarios flexibles ideales para estudiantes de universidad o instituto.</p>
+    </section>
+
+    <hr>
+
+    <!-- 5. PRIMER PIE DE PÁGINA (FILA 1) -->
+    <footer>
+        <p>Atención al postulante: trabajaconnosotros@metro.com.pe | Lima, Perú</p>
+    </footer>
+
+    <hr>
+
+    <!-- 6. SEGUNDO PIE DE PÁGINA (FILA 2) -->
+    <footer>
+        <p>© 2026 Tiendas Metro Perú - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
